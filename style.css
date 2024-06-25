@@ -1,0 +1,307 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 60px;
+    width: 100%;
+    background-color:black;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+  color: rgb(28, 179, 28);
+
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  .logo{
+    color: white;
+  }
+  .icon{
+    color: white;
+    cursor: pointer;
+  }
+  @media all and (max-width:30em){
+    .nn {
+    display:none;
+   
+    }
+    }
+ 
+  .icon:hover{
+    color: rgb(22, 164, 22);
+  }
+  .pattern img {
+    display: block;
+}
+
+.pattern {
+    position: relative;
+    display: inline-block;
+}
+
+.caption h1 {
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.pattern p{
+  color: silver;
+  position: absolute;
+  top: 38%;
+left: 4%;
+  font-weight: bold;
+}
+@media all and (max-width:450px){
+  .pattern p{
+  display:block;
+  margin:2em auto;
+  margin-left: 5em;
+  }
+  }
+
+.pattern h1::before {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 8rem;
+  background-color: #00a650;
+  position: absolute;
+  left: 8px;
+  top: 0;
+}
+ 
+a.button3{
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#00a650;
+  text-align:center;
+  transition: all 0.2s;
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  }
+  a.button3:hover{
+  background-color:#4095c6;
+  }
+  @media all and (max-width:30em){
+  a.button3{
+  display:block;
+  margin:2em auto;
+  margin-left: 5em;
+  }
+  }
+.app{
+  position: absolute;
+  left: 55%;
+}
+@media all and (max-width:30em){
+  .app {
+  display:none;
+ 
+  }
+  }
+.second{
+  width: 100%;
+  height:1240px;
+  background-color: #00a650;
+}
+.second h1{
+  color: white;
+}
+.second p{
+
+color:  rgba(255, 255, 255, 0.7);}
+@media only screen and (max-width: 550px) {
+  .second p {
+      font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .box2 img {
+   display: block;
+   padding-top: -5px;
+
+  }
+}
+.box3{
+  width: 50;
+}
+.box4{
+  background-color: rgb(236, 236, 236);
+
+}
+.box5::before {
+  display: block;
+  content: "";
+  
+  width: 8rem;
+  background-color: #00a650;
+}
+.green{
+  display: block;
+  width: 17rem;
+  color: #1f6340;
+  position: absolute;
+  left: 38%;
+}
+
+ul{
+  list-style: circle;
+
+}
+.box button{
+  background-color: #00a650;
+  color: white;
+  height: 40px;
+  width: 60%;
+box-sizing: border-box;  
+border: none;
+}
+.box7 button{
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 60%;
+box-sizing: border-box;  
+border: none;
+}
+.box7 button:hover{
+  background-color: #0b4527;
+  color: white;
+}
+.box7{
+  background-color: #00a650;
+  color: white;
+  height: 400px;
+}
+.box8{
+  background-color: #333;
+}
+.box8 h1 {
+  color: #00a650;
+}
+.box8 p{
+color: silver;
+}
+input{
+  background-color: #333;
+width: 55%;
+border: none;
+}
+.box8 button{
+  background-color: #00a650;
+  color: white;
+  border: none;
+}
+.box8 h1{
+
+  color: white;
+
+}
+.box8 p{
+
+  color:silver;
+
+}
+span{
+  color: #00a650;
+}
+span:hover{
+  color: white;
+  cursor: pointer;
+}
